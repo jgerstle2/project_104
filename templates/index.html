@@ -1,4 +1,45 @@
 {% extends "base.html" %}
 {% block content %}
-    <h3>Hello, World!</h3>
+    <p id="top"><b><i>Welcome to Jenny's Minis</i></b><br/>
+        Where paintings and drawings and miniatures can be browsed for and bought, we take custom orders.
+        <br/>We would also like to hear requests for what to do next!</p>
+    <form action="file:///C:/Users/Jennifer/Documents/concepts/website/jenny'sminishome.html">
+        <p>Would you like to brows the art?</P>
+        <select name="browsing" onchange="window.open(this.value,'','');">
+            <option value="">If so what Type?</option>
+            <option value="paintings.html">paintings</option>
+            <option value="pencil%20drawings.html">Pencil Drawings</option>
+            <option value="miniatures.html">Miniatures</option>
+            <option value="favorites.html">Favorites</option>
+        </select>
+    </form>
+    <form>
+        <p>Would you like to buy something?</p>
+        <select name="buying" onchange="window.open(this.value,'');">
+            <option value="">If so what Type?</option>
+            <option value="custom%20paintings.html">Custom Painting</option>
+            <option value="custom%20miniatures.html">Custom Miniatures</option>
+        </select>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="4">the chart of the amount of happy customers</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>for the custom paintings</th>
+            <th>for the minis</th>
+            <th>for the paintings</th>
+            <th>for the drawings</th>
+        </tr>
+        <tr>
+            <td>1/1</td>
+            <td>1/1</td>
+            <td>1/1</td>
+            <td>1/1</td>
+        </tr>
+        </tbody>
+    </table>
 {% endblock %}

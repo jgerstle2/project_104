@@ -1,7 +1,23 @@
 /* Variables  */
-:root {
-    --medium-margin: 10px;
-    --large-margin: 18px
+body{
+    background-color: lightblue;
+    color: black;
+    font-family: "monotype cordiva", cursive;
 }
-
-/* Styles */
+p{
+    text-indent: 20px;
+}
+table{
+    background-color: steelblue;
+    color: darkgrey;
+    text-shadow: 1px 1px #6699;
+}
+.large{
+    font-size: large;
+}
+.small{
+    font-size: small;
+}
+.address{
+    color: gray();
+}/* Styles */

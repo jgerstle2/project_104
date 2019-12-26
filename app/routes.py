@@ -6,4 +6,10 @@ from flask import render_template
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', title="Home Page")
+    return render_template('index.html', title="Jenny's Minis Home Page")
+
+
+@app.route('/')
+@app.route('/paintings')
+def paintings():
+    return render_template('paintings.html', title="Paintings")

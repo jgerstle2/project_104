@@ -6,6 +6,7 @@ from flask import Flask
 app = Flask(__name__, template_folder='../templates')
 app.static_folder = '../static'
 
+
 # This import must come AFTER the statement: app = Flask (__name__)
 # The reason for this is that routes.py refers to the app variable above.
 # So, the import must be after this app= variable so that routes can refer to the app variable, above.
