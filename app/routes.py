@@ -13,3 +13,8 @@ def index():
 @app.route('/paintings')
 def paintings():
     return render_template('paintings.html', title="Paintings")
+
+@app.route('/')
+@app.route('/custom')
+def custom():
+    return render_template('custom.html', title="Custom Paintings")
