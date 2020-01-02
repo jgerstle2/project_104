@@ -6,9 +6,7 @@
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
         <link rel="stylesheet"
-              href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
-              integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
-              crossorigin="anonymous">
+              href="{{ url_for('static', filename='./css/main.css') }}">
 
         {% if title %}
             <title>{{ title }} – MCON 104 Term Project</title>
@@ -22,7 +20,7 @@
             <img src="../static/favicon.ico" alt="Logo"/>
             <a href="{{ url_for('index') }}">Home</a>
             <a href="{{ url_for('paintings') }}">paintings page</a>
-            <!--<a href="{{ url_for('custom')}}">custom paintings</a>-->
+            <a href="{{ url_for('custom')}}">custom paintings</a>
             <hr/>
         </nav>
 
